@@ -1,0 +1,50 @@
+.banner {
+  width: 100vw;
+  height: 50vh;
+  margin-top: -60px;
+  background-image: url('../../../images/banner_1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  animation: change 10s infinite alternate linear;
+}
+
+/*===== ESTILOS TABLET - MD =====*/
+@media only screen and (min-width: 768px) {
+  .banner {
+    height: 70vh;
+    margin-top: -100px;
+  }
+}
+
+/*===== ESTILOS LG =====*/
+@media only screen and (min-width: 992px) {
+  .banner {
+    height: 80vh;
+    margin-top: -100px;
+  }
+}
+
+/*===== ESTILOS XL =====*/
+@media only screen and (min-width: 1200px) {
+  .banner {
+    height: 100vh;
+    margin-top: -10%;
+  }
+}
+
+@keyframes change {
+  0%,
+  30% {
+    background-image: url('../../../images/banner_1.png');
+  }
+  35%,
+  65% {
+    background-image: url('../../../images/banner_2.png');
+  }
+  70%,
+  100% {
+    background-image: url('../../../images/banner_3.png');
+  }
+}

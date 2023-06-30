@@ -1,0 +1,34 @@
+.description {
+  background-color: $a-blue;
+  color: #ffffffff;
+  font-family: $a-text;
+  text-align: center;
+  padding: 20px 0;
+
+  .description__body {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/*===== ESTILOS TABLET - MD =====*/
+@media only screen and (min-width: 768px) {
+  .description .description__body {
+    width: 80%;
+  }
+}
+
+/*===== ESTILOS LG =====*/
+@media only screen and (min-width: 992px) {
+  .description .description__body {
+    width: 70%;
+  }
+}
+
+/*===== ESTILOS XL =====*/
+@media only screen and (min-width: 1200px) {
+  .description .description__body {
+    width: 60%;
+  }
+}

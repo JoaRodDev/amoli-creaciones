@@ -1,0 +1,72 @@
+.product {
+  text-align: center;
+  margin: 10px 0;
+  font-family: $a-text;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  border: 2px solid $a-purple;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  @include a-transition;
+
+  &:hover {
+    background-color: $a-yellow;
+
+    & img {
+      transform: scale(1.1);
+    }
+  }
+
+  img {
+    width: 80%;
+    margin-bottom: 10px;
+    @include a-transition;
+  }
+
+  h3 {
+    font-family: $a-title;
+    color: $a-purple;
+    font-size: 2rem;
+  }
+
+  strong {
+    color: $a-purple;
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+/*===== ESTILOS MOBILE (OTHERS) - SM =====*/
+@media only screen and (min-width: 576px) {
+  .product {
+    margin: 10px;
+  }
+}
+
+/*===== ESTILOS LG =====*/
+@media only screen and (min-width: 992px) {
+  .product {
+    margin: 15px;
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+/*===== ESTILOS XL =====*/
+@media only screen and (min-width: 1200px) {
+  .product {
+    img {
+      width: 70%;
+    }
+  }
+}

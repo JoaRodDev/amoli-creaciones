@@ -1,0 +1,62 @@
+/* Paleta de colores y fuente seleccionadas */
+$a-yellow: #e0b872;
+$a-green: #a4e8db;
+$a-purple: #8a2a5a;
+$a-orange: #be594f;
+$a-blue: #6095e8;
+$a-text: 'Poppins', sans-serif;
+$a-title: 'Alkatra', cursive;
+
+/* Normalización de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Permite controlar el tamaño de fuente en rem: 1rem = 10px y fondo de la página */
+html {
+  font-size: 62.5%;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: $a-text;
+  overflow-x: hidden;
+}
+
+/* Transiciones */
+@mixin a-transition {
+  transition: all 0.3s;
+}
+
+/* Botones */
+.a-button {
+  color: #ffffffff;
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: $a-title;
+  padding: 10px 20px;
+  background: $a-purple;
+  border: 2px solid $a-yellow;
+  border-radius: 30px;
+  margin: 20px auto;
+  margin-bottom: 0;
+  width: fit-content;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  @include a-transition;
+
+  &:hover {
+    background: $a-orange;
+    color: #ffffffff;
+  }
+}
+
+/* Banner Waves */
+.banner-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

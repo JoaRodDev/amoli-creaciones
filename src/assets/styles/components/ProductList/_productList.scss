@@ -1,0 +1,91 @@
+.product-list {
+  width: 100%;
+  min-height: 70vh;
+  text-align: center;
+
+  .product-list__title {
+    width: 100vw;
+    height: 50vh;
+    margin-top: -60px;
+    background-image: url('../../../images/banner_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 10px solid $a-purple;
+
+    div {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: 0;
+
+      h2 {
+        font-family: $a-title;
+        font-size: 3rem;
+        position: relative;
+        z-index: 1;
+        color: #ffffff;
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        width: 50%;
+      }
+
+      .product-list__form {
+        position: absolute;
+        width: 60%;
+      }
+    }
+  }
+
+  .product-list__products {
+    padding-top: 20px !important;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23e0b872' fill-opacity='0.2'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+/*===== ESTILOS TABLET - MD =====*/
+@media only screen and (min-width: 768px) {
+  .product-list {
+    .product-list__title {
+      height: 70vh;
+      margin-top: -100px;
+
+      div {
+        width: 40%;
+
+        .product-list__form {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+/*===== ESTILOS LG =====*/
+@media only screen and (min-width: 992px) {
+  .product-list {
+    .product-list__title {
+      height: 80vh;
+      margin-top: -100px;
+    }
+  }
+}
+
+/*===== ESTILOS XL =====*/
+@media only screen and (min-width: 1200px) {
+  .product-list {
+    .product-list__title {
+      height: 100vh;
+      margin-top: -10%;
+
+      div .product-list__form {
+        width: 30%;
+      }
+    }
+  }
+}

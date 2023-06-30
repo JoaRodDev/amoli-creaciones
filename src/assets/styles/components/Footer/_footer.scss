@@ -1,0 +1,93 @@
+.footer {
+  text-align: center;
+
+  .footer__waves {
+    width: 100%;
+    height: 30%;
+    max-height: 150px;
+    margin: 0;
+    object-fit: cover;
+    object-position: bottom;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23e0b872' fill-opacity='0.2'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    &-2 {
+      display: none;
+    }
+  }
+
+  .footer__first-section {
+    background-color: $a-yellow;
+
+    h3 {
+      font-family: $a-title;
+      color: #ffffffff;
+      font-size: 2rem;
+      text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      color: $a-purple;
+      font-family: $a-text;
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: $a-purple;
+      font-size: 4rem;
+      margin: 5px;
+      @include a-transition;
+
+      &:hover {
+        color: $a-orange;
+      }
+    }
+  }
+
+  .footer__last-section {
+    background-color: $a-purple;
+    color: #ffffffff;
+    font-family: $a-title;
+    padding: 10px;
+
+    h4 {
+      font-weight: 100;
+    }
+  }
+}
+
+/*===== ESTILOS TABLET - MD =====*/
+@media only screen and (min-width: 768px) {
+  .footer {
+    .footer__waves {
+      height: 30%;
+      max-height: 200px;
+    }
+
+    .footer__first-section {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+/*===== ESTILOS LG =====*/
+@media only screen and (min-width: 992px) {
+  .footer .footer__waves {
+    &-1 {
+      display: none;
+    }
+
+    &-2 {
+      display: block;
+      max-height: 150px;
+    }
+  }
+}
+
+/*===== ESTILOS XL =====*/
+@media only screen and (min-width: 1400px) {
+  .footer .footer__waves-2 {
+    max-height: 200px;
+  }
+}
